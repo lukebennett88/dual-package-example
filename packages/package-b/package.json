@@ -1,0 +1,14 @@
+{
+  "name": "package-b",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "build": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "package-a": "workspace:^"
+  },
+  "devDependencies": {
+    "tsx": "^3.13.0"
+  }
+}

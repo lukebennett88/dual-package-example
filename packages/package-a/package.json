@@ -1,0 +1,31 @@
+{
+  "name": "package-a",
+  "version": "0.0.1",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./second-entrypoint": {
+      "import": "./dist/second-entrypoint.js",
+      "require": "./dist/second-entrypoint.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "dist/index.cjs",
+  "files": [
+    "dist/**",
+    "second-entrypoint.d.ts",
+    "second-entrypoint.js"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "check": "attw --pack ."
+  },
+  "devDependencies": {
+    "@arethetypeswrong/cli": "^0.12.2",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
+  }
+}
