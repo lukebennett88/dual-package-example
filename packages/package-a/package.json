@@ -15,9 +15,8 @@
   },
   "main": "dist/index.cjs",
   "files": [
-    "dist/**",
-    "second-entrypoint.d.ts",
-    "second-entrypoint.js"
+    "dist",
+    "second-entrypoint"
   ],
   "scripts": {
     "build": "tsup",

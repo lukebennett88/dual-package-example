@@ -1,0 +1,4 @@
+{
+  "main": "../dist/second-entrypoint.cjs",
+  "module": "../dist/second-entrypoint.js"
+}

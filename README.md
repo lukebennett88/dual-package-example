@@ -10,6 +10,7 @@ pnpm check
 ```
 
 After running this you should see this:
+
 ```shell
 Build tools:
 - @arethetypeswrong/cli@^0.12.2
@@ -31,5 +32,3 @@ Build tools:
 └───────────────────┴───────────────────────┴───────────────────────────────┴──────────────────────────┘
  ELIFECYCLE  Command failed with exit code 1.
 ```
-
-I'm also unsure whether creating a `.js` and `.d.ts` barrel to support `"moduleResolution": "Node"` is a good approach or not. I've seen people create folders with only a `package.json`, but I was unable to make it work.
